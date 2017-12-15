@@ -60,7 +60,7 @@ Programming: An Introduction to Computer Science" by John Zelle,
 published by Franklin, Beedle & Associates.  Also see
 http://mcsp.wartburg.edu/zelle/python for a quick reference"""
 
-__version__ = "5.0"
+__version__ = "5.0beta"
 
 # Version 5
 #     * update at bottom to fix MacOS issue causing askopenfile() to hang
