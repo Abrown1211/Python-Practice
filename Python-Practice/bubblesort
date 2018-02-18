@@ -1,0 +1,17 @@
+#Defining a bubble sort algorithm to sort a list of integers. 
+
+def bubbleSort(numlist):
+    for passnum in range(len(numlist)-1,0,-1):  #first for loop to iterate through a list of integers
+        for i in range(passnum):                #nested for loop identifying whether one integer is larger than another.
+            if numlist[i]> numlist[i+1]:              
+                numlist[i], numlist[i+1] = numlist[i+1] , numlist[i]  #bubblesort swap implemented with simulataneous assignment.
+
+
+
+#defining a main function to execute the bubble sort function on a list of integers.
+def main():
+    numlist = [10,5,8,9,3,2,5,1,6,4] #unsorted list provided as numlist variable
+    bubbleSort(numlist) #bubblesort function call to sort numlist arg. 
+    print(numlist)      #display the sorted list with print function.
+    
+main()
